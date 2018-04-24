@@ -1,0 +1,27 @@
+{
+    "name": "gipfl/protocol",
+    "description": "A couple of simple network protocol implementations",
+    "type": "library",
+    "license": "Apache",
+    "authors": [
+        {
+            "name": "Thomas Gelf",
+            "email": "thomas@gelf.net"
+        }
+    ],
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Gipfl\\Protocol\\": "src"
+        }
+    },
+    "require": {
+        "php": ">=5.4.0",
+        "ext-ctype": "*",
+        "ext-json": "*",
+        "ext-sockets": "*",
+        "evenement/evenement": "^2"
+    }
+}

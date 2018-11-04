@@ -1,7 +1,8 @@
 {
     "name": "gipfl/protocol",
-    "description": "A couple of simple network protocol implementations",
+    "description": "Base library for some network protocol implementations",
     "type": "library",
+    "license": "MIT",
     "authors": [
         {
             "name": "Thomas Gelf",
@@ -13,16 +14,13 @@
     },
     "autoload": {
         "psr-4": {
-            "gipfl\\Protocol\\": "src"
+            "gipfl\\Protocol\\Exception\\": "src/Exception",
+            "gipfl\\Protocol\\Generic\\": "src/Generic"
         }
     },
     "require": {
         "php": ">=5.4.0",
-        "ext-ctype": "*",
-        "ext-json": "*",
-        "ext-sockets": "*",
         "evenement/evenement": "^2",
-        "react/promise": "^2.7",
         "react/stream": "^1.0"
     }
 }

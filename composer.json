@@ -2,7 +2,6 @@
     "name": "gipfl/protocol",
     "description": "A couple of simple network protocol implementations",
     "type": "library",
-    "license": "Apache",
     "authors": [
         {
             "name": "Thomas Gelf",
@@ -14,7 +13,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Gipfl\\Protocol\\": "src"
+            "gipfl\\Protocol\\": "src"
         }
     },
     "require": {
@@ -22,6 +21,8 @@
         "ext-ctype": "*",
         "ext-json": "*",
         "ext-sockets": "*",
-        "evenement/evenement": "^2"
+        "evenement/evenement": "^2",
+        "react/promise": "^2.7",
+        "react/stream": "^1.0"
     }
 }

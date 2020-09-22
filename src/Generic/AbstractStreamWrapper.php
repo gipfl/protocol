@@ -8,6 +8,7 @@ use React\Stream\DuplexStreamInterface;
 use React\Stream\ReadableStreamInterface;
 use React\Stream\Util;
 use React\Stream\WritableStreamInterface;
+use RuntimeException;
 
 abstract class AbstractStreamWrapper implements DuplexStreamInterface
 {
@@ -59,8 +60,7 @@ abstract class AbstractStreamWrapper implements DuplexStreamInterface
         $this->output = $output;
         if (! $this->output->isWritable()) {
             $this->close();
-            echo "WTF, not WRIT\n";
-            return;
+            throw new RuntimeException('Cannot write to output');
         }
 
         $output->on('drain', function () {

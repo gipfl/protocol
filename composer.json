@@ -20,7 +20,7 @@
     },
     "require": {
         "php": ">=5.4.0",
-        "evenement/evenement": "^2",
-        "react/stream": "^1.0"
+        "evenement/evenement": "^2|^3",
+        "react/stream": "^1"
     }
 }

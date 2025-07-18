@@ -22,7 +22,7 @@ abstract class AbstractStreamWrapper implements DuplexStreamInterface
 
     private $closed = false;
 
-    public function __construct(ReadableStreamInterface $in, WritableStreamInterface $out = null)
+    public function __construct(ReadableStreamInterface $in, ?WritableStreamInterface $out = null)
     {
         $this->readFrom($in);
         if ($out === null && $in instanceof WritableStreamInterface) {
